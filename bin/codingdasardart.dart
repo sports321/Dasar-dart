@@ -1,28 +1,19 @@
 import 'dart:io';
 
+double luas_segiempat(double panjang, double lebar) {
+  return panjang * lebar;
+}
+
+void sapa_penonton() {
+  print("hallo penonton");
+}
+
 main(List<String> arguments) {
-  int number = int.tryParse(stdin.readLineSync());
-  switch (number) {
-    case 0:
-      print("nol");
-      break;
-    case 1:
-      print(number);
-      print("satu");
-      break;
-    case 2:
-      print("dua");
-      break;
-    default:
-      print("bilangan lain ");
-  }
-  // if (number == 0) {
-  //   print("nol");
-  // } else if (number == 1) {
-  //   print("satu");
-  // } else if (number == 2) {
-  //   print("dua");
-  // } else {
-  //   print("bilangan lain");
-  // }
+  double p, l, luas;
+
+  p = double.tryParse(stdin.readLineSync());
+  l = double.tryParse(stdin.readLineSync());
+  // luas = luas_segiempat(p, l);
+
+  print(luas_segiempat(p, l));
 }
