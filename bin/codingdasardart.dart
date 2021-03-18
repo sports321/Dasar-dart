@@ -2,13 +2,27 @@ import 'dart:io';
 
 main(List<String> arguments) {
   int number = int.tryParse(stdin.readLineSync());
-  String output;
-  // output = (number > 0) ? "positif" : "negatif atau nol";
-  // if (number > 0) {
-  //   output = "positif";
+  switch (number) {
+    case 0:
+      print("nol");
+      break;
+    case 1:
+      print(number);
+      print("satu");
+      break;
+    case 2:
+      print("dua");
+      break;
+    default:
+      print("bilangan lain ");
+  }
+  // if (number == 0) {
+  //   print("nol");
+  // } else if (number == 1) {
+  //   print("satu");
+  // } else if (number == 2) {
+  //   print("dua");
   // } else {
-  //   output = "negatif";
+  //   print("bilangan lain");
   // }
-
-  print((number > 0) ? number : number * -1);
 }
