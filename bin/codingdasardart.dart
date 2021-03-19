@@ -1,8 +1,11 @@
 import 'dart:io';
 
 main(List<String> arguments) {
-  int a, b;
-  a = 10;
-  b = ++a;
-  print(a.toString() + " - " + b.toString());
+  List<int> myList = [1, 1, 6, 4, 3, 6, 2];
+  List<String> list = [];
+
+  list = myList.map((number) => "angka" + number.toString()).toList();
+  list.forEach((str) {
+    print(str);
+  });
 }
